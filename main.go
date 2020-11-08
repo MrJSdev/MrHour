@@ -13,6 +13,7 @@ func main() {
 	router := gin.Default()
 	router.Use(cors.Default())
 	router.GET("/hours", http.GetHours)
+	router.GET("/portfolio", http.GetPortfolios)
 	router.GET("/messages", http.GetMessages)
 	router.POST("/power", http.GetPower)
 	router.POST("/hour/save", http.SaveHour)

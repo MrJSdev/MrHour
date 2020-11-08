@@ -38,7 +38,6 @@ func FindMessages() ([]entity.Message, error) {
 	defer DB.Close()
 	return messages, nil
 }
-function getQuery()
 
 // SendMessage to save message
 func SendMessage(message entity.Message) error {
